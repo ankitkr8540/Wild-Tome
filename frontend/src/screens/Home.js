@@ -1,6 +1,7 @@
 import React from 'react'
 import FormContainer from '../components/FormContainer'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Col, Image, Row } from 'react-bootstrap'
 const Home = () => {
 
     // var swiper = new Swiper('.blog-slider', {
@@ -17,15 +18,14 @@ const Home = () => {
     //     }
     // });
     return (
-        <>
-            <div className='d-flex'>
-
-                <div className='blog-container'>
+        <FormContainer>
+            <Row className='d-flex'>
+                <Col className='blog-container' xs={12} md={6}>
                     <div className='blog-slider right-card'>
                         <div class="blog-slider__wrp swiper-wrapper">
                             <div class="blog-slider__item swiper-slide">
                                 <div className='blog-slider__img'>
-                                    <img className=" fit-img" src="\Images\tiger.jpg" />
+                                    <Image className=" fit-img" src="\Images\tiger.jpg" />
                                 </div>
                                 <div class="blog-slider__content">
                                     <span class="blog-slider__code">26 December 2019</span>
@@ -36,14 +36,14 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <img className='arrow-left' src="\Images\right-arrow.png" />
-                </div>
+                    <Image className='arrow-left' src="\Images\right-arrow.png" />
+                </Col>
 
-                <div className='blog-slider'>
+                <Col className='blog-slider'>
                     <div class="blog-slider__wrp swiper-wrapper">
                         <div class="blog-slider__item swiper-slide">
                             <div className='blog-slider__img'>
-                                <img className=" fit-img" src="\Images\tiger.jpg" />
+                                <Image className=" fit-img" src="\Images\tiger.jpg" />
                             </div>
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">26 December 2019</span>
@@ -53,14 +53,14 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Col>
 
-                <div className='blog-container'>
+                <Col className='blog-container'>
                     <div className='blog-slider right-card'>
                         <div class="blog-slider__wrp swiper-wrapper">
                             <div class="blog-slider__item swiper-slide">
                                 <div className='blog-slider__img'>
-                                    <img className=" fit-img" src="\Images\tiger.jpg" />
+                                    <Image className=" fit-img" src="\Images\tiger.jpg" />
                                 </div>
                                 <div class="blog-slider__content">
                                     <span class="blog-slider__code">26 December 2019</span>
@@ -71,11 +71,11 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <img className='arrow-right' src="\Images\right-arrow.png" />
-                </div>
-            </div>
+                    <Image className='arrow-right' src="\Images\right-arrow.png" />
+                </Col>
+            </Row>
 
-        </>
+        </FormContainer>
     )
 }
 
