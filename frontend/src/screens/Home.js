@@ -20,7 +20,7 @@ const Home = () => {
         <>
             <div className='d-flex'>
 
-                <div>
+                <div className='blog-container'>
                     <div className='blog-slider right-card'>
                         <div class="blog-slider__wrp swiper-wrapper">
                             <div class="blog-slider__item swiper-slide">
@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='blog-container'>
                     <div className='blog-slider right-card'>
                         <div class="blog-slider__wrp swiper-wrapper">
                             <div class="blog-slider__item swiper-slide">
