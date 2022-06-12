@@ -146,6 +146,7 @@ body {
   display: flex;
 }
 .arrow-right {
+  opacity: 0.5;
   width: 100px;
   position: absolute;
   height: 100px;
@@ -160,6 +161,7 @@ body {
   z-index: -1;
 }
 .arrow-left {
+  opacity: 0.5;
   width: 100px;
   position: absolute;
   height: 100px;
@@ -169,4 +171,7 @@ body {
   border-radius: 50%;
   box-shadow: 0px 14px 80px rgb(252 56 56 / 40%);
   transform: rotate(180deg);
+}
+:hover {
+  opacity: 1;
 }
